@@ -9,17 +9,17 @@
 
     &:hover{
         .eyes::after{
-            animation: pompom .9s  1;
+            animation: pompom .8s  1;
             
         }
         
-
         .santa__mustache{
             animation: wiggle .8s  1;
+            
         }
 
         .hat__main::after{
-            animation: pompompom .2s .3s 3;
+            animation: pompompom .2s .7s 3;
         }
 
     }
@@ -125,24 +125,24 @@ transform: skew(0,30deg);
     }
 }
 
-@keyframes wiggle{
-    0%{
-        transform: rotate(0turn);
-    }
-    25%{
-        transform: rotate(.02turn) scale(1.1);
-    }
-    50%{
-        transform: rotate(-0.02turn) scale(1.1);
-    }
-    75%{
-        transform: rotate(.02turn) scale(1.1);
-    }
+// @keyframes wiggle{
+//     0%{
+//         transform: rotate(0turn);
+//     }
+//     25%{
+//         transform: rotate(-0.02turn) scale(1.1);
+//     }
+//     50%{
+//         transform: rotate(0.02turn) scale(1.1);
+//     }
+//     75%{
+//         transform: rotate(-0.02turn) scale(1.1);
+//     }
 
-    100%{
-        transform: rotate(0turn) scale(1);
-    }
-}
+//     100%{
+//         transform: rotate(0turn) scale(1);
+//     }
+// }
 
 @keyframes pompompom{
     25%{
@@ -160,11 +160,24 @@ bottom:-41%;
         height:15%;
     }
     50%{
-        height: 5%;
+        height: 0%;
         margin-top: 5%;
     }
     100%{
         height:15%;
+    }
+}
+@keyframes wiggle{
+    0%{
+        transform: rotate(0turn);
+    }
+    
+    50%{
+        transform: rotate(-0.02turn) scale(1.1);
+    }
+    
+    100%{
+        transform: rotate(0turn) scale(1);
     }
 }
 
